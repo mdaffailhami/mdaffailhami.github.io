@@ -1,0 +1,61 @@
+#home-page {
+  color: #fff;
+
+  #navbar {
+    z-index: 99999999999;
+  }
+  #navbar img {
+    width: 35px;
+    border-radius: 50%;
+  }
+  #navbar ul li a:hover {
+    color: #bbb;
+  }
+
+  #carousel {
+    margin-top: 25px;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(33, 36, 41);
+    margin: auto;
+  }
+  #profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    z-index: 999;
+  }
+
+  // Desktop version
+  @media (min-width: 766px) {
+    #carousel img {
+      height: 500px;
+    }
+
+    #profile p {
+      width: 500px;
+      text-align: center;
+    }
+  }
+  // Mobile version
+  @media (max-width: 766px) {
+    #carousel img {
+      height: 222px;
+    }
+
+    #profile p {
+      width: 90%;
+      text-align: center;
+    }
+
+    #profile img {
+      width: 34%;
+      text-align: center;
+    }
+  }
+}
