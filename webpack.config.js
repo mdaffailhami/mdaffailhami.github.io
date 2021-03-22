@@ -4,6 +4,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   devServer: {
     historyApiFallback: true,
+    host: "0.0.0.0",
   },
   entry: resolve(__dirname, "src/index.js"),
   output: {
@@ -18,6 +19,7 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
+            plugins: ["@babel/plugin-proposal-class-properties"],
           },
         },
       },
