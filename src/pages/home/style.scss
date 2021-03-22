@@ -1,22 +1,22 @@
 #home-page {
-  color: #fff;
+  // color: #fff;
 
-  #navbar {
-    z-index: 99999999999;
+  // #navbar {
+  //   z-index: 99999999999;
 
-    img {
-      width: 35px;
-      border-radius: 50%;
-    }
+  //   img {
+  //     width: 35px;
+  //     border-radius: 50%;
+  //   }
 
-    ul li a:hover {
-      color: #bbb;
-    }
+  //   ul li a:hover {
+  //     color: #bbb;
+  //   }
 
-    .nav-item {
-      margin-right: 10px;
-    }
-  }
+  //   .nav-item {
+  //     margin-right: 10px;
+  //   }
+  // }
 
   // #carousel {
   //   margin-top: 25px;
@@ -40,106 +40,106 @@
 
   #content {
     #left-side {
-      #gif {
-        display: flex;
-        justify-content: center;
+      // #gif {
+      //   display: flex;
+      //   justify-content: center;
 
-        img {
-          width: 98%;
-          // border-radius: 10px;
-        }
-      }
-
-      #articles {
-        a {
-          text-decoration: none;
-          div {
-            display: flex;
-            background-color: #fff;
-            border-radius: 5px;
-            overflow: hidden;
-          }
-        }
-        .image {
-          background-image: "url(https://mdaffailhami.github.io/articles/1-crud_node_json/assets/images/nodejs.jpg)";
-          background-position-x: -10;
-        }
-        .text {
-          display: block;
-          h5 {
-            text-decoration: underline;
-          }
-          span {
-            color: #777;
-          }
-          p {
-            color: #555;
-          }
-        }
-      }
+      //   img {
+      //     width: 98%;
+      //     // border-radius: 10px;
+      //   }
     }
-  }
 
-  // Desktop version
-  @media (min-width: 766px) {
-    // #carousel img {
-    //   height: 500px;
+    // #articles {
+    //   a {
+    //     text-decoration: none;
+    //     div {
+    //       display: flex;
+    //       background-color: #fff;
+    //       border-radius: 5px;
+    //       overflow: hidden;
+    //     }
+    //   }
+    //   .image {
+    //     background-image: "url(https://mdaffailhami.github.io/articles/1-crud_node_json/assets/images/nodejs.jpg)";
+    //     background-position-x: -10;
+    //   }
+    //   .text {
+    //     display: block;
+    //     h5 {
+    //       text-decoration: underline;
+    //     }
+    //     span {
+    //       color: #777;
+    //     }
+    //     p {
+    //       color: #555;
+    //     }
+    //   }
     // }
-
-    // #profile p {
-    //   width: 500px;
-    //   text-align: center;
-    // }
-
-    #content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-
-      #left-side {
-        width: 800px;
-        background-color: rgb(39, 43, 51);
-        padding: 30px;
-        padding-top: 15px;
-        border-radius: 1.5%;
-      }
-
-      #right-side {
-        border-radius: 3%;
-        width: 320px;
-        height: fit-content;
-        background-color: rgb(35, 46, 53);
-        border: 1px solid #fff;
-        padding: 30px;
-      }
-    }
-  }
-
-  // Mobile version
-  @media (max-width: 766px) {
-    // #carousel img {
-    //   height: 222px;
-    // }
-
-    // #profile p {
-    //   width: 90%;
-    //   text-align: center;
-    // }
-
-    // #profile img {
-    //   width: 34%;
-    //   text-align: center;
-    // }
-
-    #content {
-      margin: auto;
-      background-color: rgb(33, 37, 43);
-      padding: 30px;
-      padding-top: 15px;
-      border-radius: 1.5%;
-    }
-    #content #left-side {
-      margin-bottom: 65px;
-    }
   }
 }
+
+// Desktop version
+@media (min-width: 766px) {
+  // #carousel img {
+  //   height: 500px;
+  // }
+
+  // #profile p {
+  //   width: 500px;
+  //   text-align: center;
+  // }
+
+  // #content {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-evenly;
+
+  //   #left-side {
+  //     width: 800px;
+  //     background-color: rgb(39, 43, 51);
+  //     padding: 30px;
+  //     padding-top: 15px;
+  //     // border-radius: 1.5%;
+  //   }
+
+  //   #right-side {
+  //     // border-radius: 3%;
+  //     width: 320px;
+  //     height: fit-content;
+  //     background-color: rgb(35, 46, 53);
+  //     border: 1px solid #fff;
+  //     padding: 30px;
+  //   }
+  // }
+}
+
+// Mobile version
+@media (max-width: 766px) {
+  // #carousel img {
+  //   height: 222px;
+  // }
+
+  // #profile p {
+  //   width: 90%;
+  //   text-align: center;
+  // }
+
+  // #profile img {
+  //   width: 34%;
+  //   text-align: center;
+  // }
+
+  // #content {
+  //   margin: auto;
+  //   background-color: rgb(33, 37, 43);
+  //   padding: 30px;
+  //   padding-top: 15px;
+  //   border-radius: 1.5%;
+  // }
+  // #content #left-side {
+  //   margin-bottom: 65px;
+  // }
+}
+// }
