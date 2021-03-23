@@ -1,4 +1,4 @@
 import github from "./github.png";
 import instagram from "./instagram.png";
-
-export default { github, instagram };
+import appIcon from "./app-icon.png";
+export default { github, instagram, appIcon };

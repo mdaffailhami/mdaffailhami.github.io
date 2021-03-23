@@ -21,7 +21,6 @@ class Home extends Component {
 
   componentDidMount() {
     this._isMounted = true;
-    console.log("componentDidMount()");
 
     // Check the device is mobile or desktop
     this.checkDevice();
@@ -30,7 +29,6 @@ class Home extends Component {
 
   componentWillUnmount() {
     this._isMounted = false;
-    console.log("componentWillUnmount()");
 
     window.removeEventListener("resize", () => this.checkDevice());
   }
@@ -46,7 +44,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log("render()");
     const { isMobile } = this.state;
     return (
       <div id="home-page">

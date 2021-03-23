@@ -1,20 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
 import { render } from "react-dom";
-import { Home } from "./pages";
-import image from "./assets/images";
-// import { Alert, Button, Form, FormControl, Nav, Navbar, NavDropdown } from "react-bootstrap";
-function App() {
-  const appIcon = document.createElement("link");
-  appIcon.rel = "shortcut icon";
-  appIcon.type = "image/x-icon";
-  appIcon.href = image.profile;
+import { Article, Home } from "./pages";
+import icon from "./assets/icons";
 
-  document.head.appendChild(appIcon);
-  return (
-    <>
-      <Home />
-    </>
-  );
+class App extends Component {
+  componentDidMount() {
+    console.log("componentDidMount()");
+  }
+  componentDidUpdate() {
+    console.log("componentDidUpdate()");
+  }
+  componentWillUnmount() {
+    console.log("componentWillUnmount()");
+  }
+  render() {
+    console.log("render()");
+
+    // Default App Title & App Icon
+    document.title = "Daffa Ilhami";
+    document.getElementById("app-icon").setAttribute("href", icon.appIcon);
+
+    // App Router
+    const path = window.location.pathname.toLowerCase();
+    if (path == "/") {
+      return <Home />;
+    }
+    if (path == "/article") {
+      return <Article />;
+    }
+    // Not found page
+    return <Home />;
+    // return <a href="/article">uwu</a>;
+  }
 }
 
 render(<App />, document.getElementById("app"));
