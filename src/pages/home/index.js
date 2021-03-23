@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./style.scss";
 import {
   Articles,
   Carousel,
@@ -38,10 +37,10 @@ class Home extends Component {
 
   checkDevice() {
     if (this._isMounted) {
-      if (window.innerWidth <= 766) {
-        this.setState({ isMobile: true });
-      } else {
+      if (window.innerWidth >= 768) {
         this.setState({ isMobile: false });
+      } else {
+        this.setState({ isMobile: true });
       }
     }
   }
@@ -83,7 +82,7 @@ class Home extends Component {
           >
             <Gif />
             <Articles isMobile={isMobile} />
-            <Projects />
+            <Projects isMobile={isMobile} />
             <QnA />
           </div>
           <div

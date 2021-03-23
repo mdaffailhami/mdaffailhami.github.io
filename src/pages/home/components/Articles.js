@@ -26,7 +26,10 @@ function Articles(props) {
             }}
           ></div>
           <div className="text" style={{ flex: 2, padding: 10 }}>
-            <h5 className="text-primary" style={{ fontSize: isMobile ? "medium" : null }}>
+            <h5
+              className="text-primary"
+              style={{ fontSize: isMobile ? "medium" : null, textDecoration: "underline" }}
+            >
               Membuat Aplikasi CRUD Berbasis CLI dengan Node.js
             </h5>
             <span style={{ color: "#444" }}>12/02/2021</span>

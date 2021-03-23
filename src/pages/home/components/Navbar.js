@@ -74,8 +74,8 @@ class NavItems extends Component {
         <ul className="navbar-nav me-auto mb-8 mb-lg-0">
           <NavItem text="Articles" href="#articles" />
           <NavItem text="Projects" href="#projects" />
-          <NavItem text="Programming Skills" href="#skills" />
           <NavItem text="QnA" href="#qna" />
+          <NavItem text="Programming Skills" href="#skills" />
           <NavItem text="Social Media" href="#socmeds" />
         </ul>
       </div>

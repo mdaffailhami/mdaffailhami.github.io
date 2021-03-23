@@ -13,8 +13,10 @@ function QnA() {
         <Answer text="17 tahun" />
         <Question text="Anime yang disukai apa aja?" />
         <Answer text="Naruto, Mushoku Tensei, Attack on Titan, Dr. STONE" />
-        <Question text="Teknologi apa aja yang dipake untuk ngebangun website ini?" />
+        <Question text="Teknologi apa yang dipake untuk ngebangun website ini?" />
         <Answer text="React.js & Bootstrap 5" />
+        <Question text="Sejak kapan mulai belajar Programming?" />
+        <Answer text="12 September 2020 🙄" />
         <Question text="Gimana caranya biar bisa jadi Programmer?" />
         <Answer text="Ya belajar lah 👍" />
         <Question text="Belajar Programming enaknya dimana?" />

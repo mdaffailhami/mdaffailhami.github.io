@@ -7,11 +7,11 @@ function Skills(props) {
       {props.isMobile && <hr />}
       <h3 className="text-center">Programming Skills</h3>
       <Skill title="JavaScript" value="90" color="bg-warning" />
-      <Skill title="Node.js" value="60" color="bg-success" />
       <Skill title="HTML" value="68" color="bg-danger" />
       <Skill title="CSS" value="65" color="bg-primary" />
-      <Skill title="Express.js" value="75" color="rgb(90, 192, 6)" />
+      <Skill title="React.js" value="60" color="#3f51b5" />
       <Skill title="React Native" value="53" color="bg-secondary" />
+      <Skill title="Express.js" value="75" color="rgb(90, 192, 6)" />
       <Skill title="Java" value="60" color="rgb(255, 73, 73)" />
       <Skill title="PHP" value="48" color="bg-primary" />
       <Skill title="Python" value="30" color="bg-info" />

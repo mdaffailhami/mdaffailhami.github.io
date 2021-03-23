@@ -1,15 +1,11 @@
 import React from "react";
-
+import gif from "../../../assets/gifs";
 function Gif() {
   return (
     <>
       <hr />
       <div id="gif" style={{ display: "flex", justifyContent: "center" }}>
-        <img
-          src="https://mdaffailhami.github.io/assets/images/fujiwara-chika.gif"
-          alt="..."
-          style={{ width: "98%" }}
-        />
+        <img src={gif.fujiwaraChika} alt="..." style={{ width: "98%" }} />
       </div>
       <hr />
     </>
