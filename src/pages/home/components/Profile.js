@@ -17,7 +17,7 @@ function Profile(props) {
         src={image.profile}
         alt="profile"
         style={{
-          width: props.imageWidth,
+          width: props.isMobile ? "34%" : 150,
           borderRadius: "50%",
           marginTop: 20,
           marginBottom: 10,

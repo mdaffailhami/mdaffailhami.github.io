@@ -10,7 +10,7 @@ function Carousel(props) {
       style={{ marginTop: 30 }}
     >
       <CarouselIndicators />
-      <CarouselInner height={props.height} />
+      <CarouselInner height={props.isMobile ? 222 : 500} />
       <CarouselControls />
     </div>
   );

@@ -7,7 +7,7 @@ function Navbar() {
     <nav
       id="navbar"
       className="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow"
-      style={{ zIndex: 999 }}
+      style={{ zIndex: 99999 }}
     >
       <div className="container">
         <NavbarBrand />

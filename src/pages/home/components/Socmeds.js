@@ -3,9 +3,7 @@ import React from "react";
 function Socmed() {
   return (
     <div id="socmeds">
-      <h3 className="title" style={{ textAlign: "center" }}>
-        Social Media
-      </h3>
+      <h3 className="text-center">Social Media</h3>
       <center>
         <a href="https://github.com/mdaffailhami" target="_blank">
           <img

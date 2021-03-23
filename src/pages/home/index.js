@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.scss";
 import { Articles, Carousel, Gif, Navbar, Profile, Skills, Socmeds } from "./components";
+import Projects from "./components/Projects";
 
 class Home extends Component {
   _isMounted = false;
@@ -41,8 +42,8 @@ class Home extends Component {
     return (
       <div id="home-page">
         <Navbar />
-        <Carousel height={isMobile ? 222 : 500} />
-        <Profile imageWidth={isMobile ? "34%" : 150} />
+        <Carousel isMobile={isMobile} />
+        <Profile isMobile={isMobile} />
 
         <div
           id="content"
@@ -71,7 +72,8 @@ class Home extends Component {
             }}
           >
             <Gif />
-            <Articles />
+            <Articles isMobile={isMobile} />
+            <Projects />
           </div>
           <div
             id="right-side"

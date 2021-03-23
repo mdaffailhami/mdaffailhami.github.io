@@ -3,7 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <div id="skills">
-      <h3 className="title">Programming Skills</h3>
+      <h3 className="text-center">Programming Skills</h3>
       <Skill title="JavaScript" value="90" color="bg-warning" />
       <Skill title="Node.js" value="60" color="bg-success" />
       <Skill title="HTML" value="68" color="bg-danger" />
