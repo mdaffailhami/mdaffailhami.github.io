@@ -1,7 +1,17 @@
 import React, { Component } from "react";
 import "./style.scss";
-import { Articles, Carousel, Gif, Navbar, Profile, Skills, Socmeds } from "./components";
-import Projects from "./components/Projects";
+import {
+  Articles,
+  Carousel,
+  Gif,
+  Navbar,
+  Profile,
+  Skills,
+  Socmeds,
+  Projects,
+  QnA,
+  Footer,
+} from "./components";
 
 class Home extends Component {
   _isMounted = false;
@@ -74,6 +84,7 @@ class Home extends Component {
             <Gif />
             <Articles isMobile={isMobile} />
             <Projects />
+            <QnA />
           </div>
           <div
             id="right-side"
@@ -86,10 +97,11 @@ class Home extends Component {
               padding: isMobile ? null : 30,
             }}
           >
-            <Skills />
+            <Skills isMobile={isMobile} />
             <Socmeds />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

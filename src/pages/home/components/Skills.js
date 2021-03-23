@@ -1,8 +1,10 @@
 import React from "react";
 
-function Skills() {
+function Skills(props) {
   return (
     <div id="skills">
+      <div style={{ height: 90, marginTop: -100 }}></div>
+      {props.isMobile && <hr />}
       <h3 className="text-center">Programming Skills</h3>
       <Skill title="JavaScript" value="90" color="bg-warning" />
       <Skill title="Node.js" value="60" color="bg-success" />

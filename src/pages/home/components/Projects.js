@@ -3,7 +3,7 @@ import React from "react";
 function Projects() {
   return (
     <div id="projects">
-      <div style={{ height: 60 }}></div>
+      <div style={{ height: 80, marginTop: -50 }}></div>
       <hr />
       <h3 className="text-center mb-3">Projects</h3>
       <div className="row">
