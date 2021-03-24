@@ -1,16 +1,6 @@
 import React, { Component } from "react";
-import {
-  Articles,
-  Carousel,
-  Gif,
-  Navbar,
-  Profile,
-  Skills,
-  Socmeds,
-  Projects,
-  QnA,
-  Footer,
-} from "./components";
+import { Navbar, Footer } from "../../components";
+import { Articles, Carousel, Gif, Profile, Skills, Socmeds, Projects, QnA } from "./components";
 
 class Home extends Component {
   _isMounted = false;
@@ -20,6 +10,7 @@ class Home extends Component {
   };
 
   componentDidMount() {
+    console.log("componentDidMount()");
     this._isMounted = true;
 
     // Check the device is mobile or desktop
@@ -28,6 +19,8 @@ class Home extends Component {
   }
 
   componentWillUnmount() {
+    console.log("componentWillUnmount()");
+
     this._isMounted = false;
 
     window.removeEventListener("resize", () => this.checkDevice());
@@ -44,13 +37,14 @@ class Home extends Component {
   }
 
   render() {
+    console.log("render()");
     const { isMobile } = this.state;
+
     return (
       <div id="home-page">
         <Navbar />
         <Carousel isMobile={isMobile} />
         <Profile isMobile={isMobile} />
-
         <div
           id="content"
           style={{

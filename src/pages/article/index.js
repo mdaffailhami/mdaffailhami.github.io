@@ -1,11 +1,10 @@
 import React from "react";
+import CrudNodeJSON from "./pages/1-crud-node-json";
+import Router from "./pages/Router";
 
 function Article() {
-  return (
-    <div>
-      <h1>ARTICLE nih lurr</h1>
-    </div>
-  );
+  return <Router />;
 }
 
 export default Article;
+export { CrudNodeJSON };

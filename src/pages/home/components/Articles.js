@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../../../assets/images";
 
 function Articles(props) {
   const { isMobile } = props;
@@ -6,7 +7,7 @@ function Articles(props) {
     <div id="articles">
       <div style={{ height: 70, marginTop: -50 }}></div>
       <h3 className="text-center mb-3">Articles</h3>
-      <a href="articles/1-crud_node_json/" style={{ textDecoration: "none" }}>
+      <a href="article/1-crud-node-json" style={{ textDecoration: "none" }}>
         <div
           style={{
             display: "flex",
@@ -21,8 +22,7 @@ function Articles(props) {
             style={{
               flex: 1,
               backgroundSize: "cover",
-              backgroundImage:
-                "url(https://mdaffailhami.github.io/articles/1-crud_node_json/assets/images/nodejs.jpg)",
+              backgroundImage: "url(" + image.crudNodeJSON + ")",
             }}
           ></div>
           <div className="text" style={{ flex: 2, padding: 10 }}>

@@ -33,7 +33,7 @@ function Projects(props) {
           />
           <Project.Column
             isMobile={props.isMobile}
-            href="http://www.mediafire.com/file/7w4zgssskx8ik6t/Aidunnow.apk/file"
+            href="https://mdi-card.netlify.app"
             image="https://mdi-card.netlify.app/app-icon.svg"
             title="MDI Card"
             desc="Aplikasi web untuk mentautkan sosial media"
