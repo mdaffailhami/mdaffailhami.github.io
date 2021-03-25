@@ -1,4 +1,5 @@
 import React from "react";
+import icons from "../../../assets/icons";
 
 function Projects(props) {
   return (
@@ -11,14 +12,14 @@ function Projects(props) {
           <Project.Column
             isMobile={props.isMobile}
             href="https://mdi-note.herokuapp.com"
-            image="https://mdaffailhami.github.io/assets/images/mdi-note.png"
+            image={icons.mdinote}
             title="MDI Note"
             desc="Aplikasi Web untuk menyimpan catatan"
           />
           <Project.Column
             isMobile={props.isMobile}
             href="http://www.mediafire.com/file/7w4zgssskx8ik6t/Aidunnow.apk/file"
-            image="https://mdaffailhami.github.io/assets/images/aidunnow.png"
+            image={icons.aidunnow}
             title="Aidunnow"
             desc="Aplikasi android calculator"
           />
