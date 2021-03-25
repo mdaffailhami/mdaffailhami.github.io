@@ -1,3 +1,3 @@
 import fujiwaraChika from "./fujiwara-chika.gif";
-
-export default { fujiwaraChika };
+import hasilAkhirArticleCRUDNodeJSON from "./hasil-akhir-article-crud-node-json.gif";
+export default { fujiwaraChika, hasilAkhirArticleCRUDNodeJSON };
