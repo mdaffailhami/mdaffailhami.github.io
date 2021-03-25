@@ -1,6 +1,8 @@
 const { resolve } = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 
+new HTMLWebpackPlugin({ template: resolve(__dirname, "src", "404.html") });
+
 module.exports = {
   devServer: {
     historyApiFallback: true,
@@ -30,5 +32,13 @@ module.exports = {
   // resolve: {
   //   extensions: [".js", ".jsx"],
   // },
-  plugins: [new HTMLWebpackPlugin({ template: resolve(__dirname, "src/index.html") })],
+  plugins: [
+    new HTMLWebpackPlugin({ template: resolve(__dirname, "src/index.html") }),
+    new HTMLWebpackPlugin({
+      template: "./src/404.html",
+      inject: true,
+      chunks: ["404"],
+      filename: "404.html",
+    }),
+  ],
 };
