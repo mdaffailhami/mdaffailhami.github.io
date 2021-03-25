@@ -1,10 +1,9 @@
 import React from "react";
-import CrudNodeJSON from "./pages/1-crud-node-json";
-import Router from "./pages/Router";
+import CRUDNodeJSON from "./1-crud-node-json";
 
 function Article() {
-  return <Router />;
+  return <h1>article</h1>;
 }
 
 export default Article;
-export { CrudNodeJSON };
+export { CRUDNodeJSON };

@@ -1,10 +1,12 @@
 import React from "react";
-import { Article, Home } from ".";
+import Home from "./home";
+import Article, { CRUDNodeJSON } from "./article";
 
 function Router() {
   const routes = [
     { path: "/", component: <Home /> },
     { path: "/article", component: <Article /> },
+    { path: "/article/crud-node-json", component: <CRUDNodeJSON /> },
   ];
 
   const path = window.location.pathname.toLowerCase();
