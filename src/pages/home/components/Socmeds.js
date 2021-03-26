@@ -6,7 +6,7 @@ function Socmed() {
     <div id="socmeds">
       <div style={{ height: 50, marginTop: -20 }}></div>
       <hr />
-      <h3 className="text-center">Social Media</h3>
+      <h3 className="text-center">Socmeds</h3>
       <center>
         <a href="https://github.com/mdaffailhami" target="_blank">
           <img

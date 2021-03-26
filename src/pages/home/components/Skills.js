@@ -5,7 +5,7 @@ function Skills(props) {
     <div id="skills">
       <div style={{ height: 90, marginTop: -100 }}></div>
       {props.isMobile && <hr />}
-      <h3 className="text-center">Programming Skills</h3>
+      <h3 className="text-center">Skills</h3>
       <Skill title="JavaScript" value="85" color="bg-warning" />
       <Skill title="HTML" value="80" color="bg-danger" />
       <Skill title="CSS" value="72" color="bg-primary" />
