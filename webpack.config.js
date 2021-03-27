@@ -31,11 +31,13 @@ module.exports = {
   //   extensions: [".js", ".jsx"],
   // },
   plugins: [
-    new HTMLWebpackPlugin({ template: resolve(__dirname, "src/index.html") }),
+    new HTMLWebpackPlugin({
+      template: resolve(__dirname, "src/index.html"),
+      inject: false
+    }),
     new HTMLWebpackPlugin({
       template: "./src/404.html",
-      inject: true,
-      chunks: ["404"],
+      inject: false,
       filename: "404.html",
     }),
   ],
