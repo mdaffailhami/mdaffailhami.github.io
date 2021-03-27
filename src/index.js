@@ -2,6 +2,8 @@ import React from "react";
 import { render } from "react-dom";
 import icon from "./assets/icons";
 import Router from "./pages/Router";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function App() {
   // Default App Title & App Icon

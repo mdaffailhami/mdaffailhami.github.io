@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Footer } from "../../../components";
 import { Isi, MoreArticles, Pembuka, Penutup } from "./components";
+import hljs from "highlight.js/lib/core";
+import "highlight.js/styles/hybrid.css";
+import javaScriptHljs from "highlight.js/lib/languages/javascript";
 
 class CRUDNodeJSON extends Component {
   _isMounted = false;
@@ -12,6 +15,14 @@ class CRUDNodeJSON extends Component {
   componentDidMount() {
     console.log("componentDidMount()");
     this._isMounted = true;
+
+    // Set title
+    document.title = "Membuat aplikasi CRUD berbasis CLI dengan Node.js";
+
+    // Highlight.js configuration
+    hljs.registerLanguage("javascript", javaScriptHljs);
+    hljs.initHighlighting.called = false;
+    hljs.initHighlighting();
 
     // Check the device is mobile or desktop
     this.checkDevice();

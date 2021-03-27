@@ -24,6 +24,7 @@ module.exports = {
         },
       },
       // { test: /\.(scss|css)$/, use: ["style-loader", "css-loader", "sass-loader"] },
+      { test: /\.(css)$/, use: ["style-loader", "css-loader"] },
       { test: /\.(jpg|png|svg|gif)$/, use: "url-loader" },
     ],
   },
@@ -33,7 +34,7 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       template: resolve(__dirname, "src/index.html"),
-      inject: false
+      inject: false,
     }),
     new HTMLWebpackPlugin({
       template: "./src/404.html",
