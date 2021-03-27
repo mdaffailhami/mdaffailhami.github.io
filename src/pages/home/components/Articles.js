@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../../assets/images";
+import { replacePage } from "../../../functions";
 
 function Articles(props) {
   const { isMobile } = props;
@@ -7,7 +8,14 @@ function Articles(props) {
     <div id="articles">
       <div style={{ height: 70, marginTop: -50 }}></div>
       <h3 className="text-center mb-3">Articles</h3>
-      <a href="article/crud-node-json" style={{ textDecoration: "none" }}>
+      <a
+        href="/article/crud-node-json"
+        onClick={(event) => {
+          event.preventDefault();
+          replacePage("/article/crud-node-json");
+        }}
+        style={{ textDecoration: "none" }}
+      >
         <div
           style={{
             display: "flex",

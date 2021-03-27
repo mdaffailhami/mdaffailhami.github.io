@@ -1,5 +1,6 @@
 import React from "react";
 import gifs from "../../../../assets/gifs";
+import { replacePage } from "../../../../functions";
 
 function Penutup() {
   return (
@@ -19,7 +20,13 @@ function Penutup() {
         <br />
 
         <center>
-          <a href="../../">
+          <a
+            href="/"
+            onClick={(event) => {
+              event.preventDefault();
+              replacePage("/");
+            }}
+          >
             <button type="button" className="btn btn-primary">
               Ke halaman utama!
             </button>

@@ -11,4 +11,14 @@ function App() {
   return <Router />;
 }
 
-render(<App />, document.getElementById("app"));
+function renderApp() {
+  render(<App />, document.getElementById("app"));
+}
+
+// Mounting pertama
+renderApp();
+
+// Mounting ketika tombol back / previous di browser dipencet
+window.addEventListener("popstate", renderApp);
+
+export default renderApp;

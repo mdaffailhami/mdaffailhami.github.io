@@ -11,7 +11,7 @@ function Router() {
 
   const path = window.location.pathname.toLowerCase();
   const route = routes.find((route) => route.path == path);
-
+  console.log(route);
   // If not found
   if (route == undefined) {
     window.location.pathname = "/";
