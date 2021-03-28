@@ -25,7 +25,7 @@ function Profile(props) {
         }}
       />
       <h2>DAFFA ILHAMI</h2>
-      <p className="text-center">The person who likes Information Technology</p>
+      <p className="text-center">A man who likes information technology</p>
     </div>
   );
 }

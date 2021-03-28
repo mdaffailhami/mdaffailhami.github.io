@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 import { Navbar, Footer } from "../../components";
-import { Articles, Carousel, Gif, Profile, Skills, Socmeds, Projects, QnA } from "./components";
+import {
+  Articles,
+  Carousel,
+  Gif,
+  Profile,
+  Skills,
+  Socmeds,
+  Projects,
+  QnA,
+  ContactMe,
+} from "./components";
 
 class Home extends Component {
   _isMounted = false;
@@ -91,6 +101,7 @@ class Home extends Component {
             <Socmeds />
           </div>
         </div>
+        <ContactMe isMobile={isMobile} />
         <Footer />
       </div>
     );

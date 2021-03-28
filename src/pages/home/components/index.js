@@ -8,5 +8,5 @@ import Projects from "./Projects";
 import QnA from "./QnA";
 import Skills from "./Skills";
 import Socmeds from "./Socmeds";
-
-export { Carousel, Profile, Gif, Articles, Skills, Socmeds, Projects, QnA };
+import ContactMe from "./ContactMe";
+export { Carousel, Profile, Gif, Articles, Skills, Socmeds, Projects, QnA, ContactMe };
