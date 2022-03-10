@@ -58438,7 +58438,7 @@ G(a,b){var s=null
 return A.ea(A.b([A.dd("FAQ",s,s,s,A.N(b).N.e,s,s),B.bV,A.q9(B.d9,B.CU,12,20)],t.p),B.a8,B.Y,B.L)}}
 A.EC.prototype={
 G(a,b){var s,r,q,p=null,o=A.N(b),n=A.N(b).N.ch
-n=A.wh("| Last update on March 6, 2022 |",n==null?p:n.kw(14))
+n=A.wh("| Last update on March 10, 2022 |",n==null?p:n.kw(14))
 s=A.N(b).N.ch
 s=A.wh("| Released on February 8, 2021 |",s==null?p:s.kw(14))
 r=A.N(b).N.ch
